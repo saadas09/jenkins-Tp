@@ -11,7 +11,7 @@ PRIX_CAFE = 12
 def calculer_total(quantite):
     if not isinstance(quantite, int) or isinstance(quantite, bool) or not 1 <= quantite <= 10:
         raise ValueError("La quantité doit être comprise entre 1 et 10.")
-    return quantite * PRIX_CAFE
+    return quantite + PRIX_CAFE
 
 
 @app.get("/")
