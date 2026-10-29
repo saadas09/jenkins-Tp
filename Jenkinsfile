@@ -5,6 +5,9 @@ pipeline {
         timeout(time: 15, unit: 'MINUTES')
         skipDefaultCheckout(true)
     }
+    triggers {
+  pollSCM('H/5 * * * *')
+    }
     stages {
         stage('Checkout') {
             steps {
