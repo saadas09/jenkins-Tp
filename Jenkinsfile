@@ -5,9 +5,7 @@ pipeline {
         timeout(time: 15, unit: 'MINUTES')
         skipDefaultCheckout(true)
     }
-    triggers {
-  cron('H/5 * * * *')
-    }
+    
     stages {
         stage('Checkout') {
             steps {
