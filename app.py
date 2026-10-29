@@ -27,7 +27,7 @@ def commande(quantite):
         return jsonify(erreur=str(erreur)), 400
     return jsonify(quantite=quantite, total=total, devise="DH")
 
-
+print("saad")
 # Le convertisseur int standard de Flask ne reconnaît pas les entiers négatifs.
 @app.get("/commande/<int(signed=True):quantite>")
 def commande_signee(quantite):
