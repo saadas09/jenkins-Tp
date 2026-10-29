@@ -63,3 +63,4 @@ Cette condition reste un exercice : elle laisse aussi passer la livraison quand 
 
 Les vérifications réalisées et leurs limites figurent dans [VALIDATION.md](VALIDATION.md).
 test de declenchement auto jenkins
+sbnato
