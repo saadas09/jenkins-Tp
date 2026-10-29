@@ -62,3 +62,4 @@ Cette condition reste un exercice : elle laisse aussi passer la livraison quand 
 **Bloquer une livraison :** dans `calculer_total` (`app.py`), remplacer `return quantite * PRIX_CAFE` par `return quantite + PRIX_CAFE`. Committer dans votre fork : 4 tests doivent échouer et Jenkins doit ignorer la livraison. Rétablir la multiplication, committer et vérifier le retour au vert.
 
 Les vérifications réalisées et leurs limites figurent dans [VALIDATION.md](VALIDATION.md).
+test de declenchement auto jenkins
