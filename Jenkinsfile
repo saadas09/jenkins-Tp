@@ -26,6 +26,18 @@ git rev-parse HEAD
             }
         }
         stage('Tests paralleles') {
+            when {
+  expression {
+    def files = []
+    for (cs in currentBuild.changeSets) {
+      for (item in cs.items) {
+        files.addAll(item.affectedPaths)
+      }
+    }
+    return files.isEmpty() ||
+      files.any { it != 'README.md' }
+  }
+}
             parallel {
                 stage('Regles de prix') {
                     steps {
