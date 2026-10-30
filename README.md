@@ -1,4 +1,4 @@
-# Campus Café
+ # Campus Café
 
 Petit atelier CI/CD distribué : Flask, 9 tests, Jenkins sur agents Windows et Docker Linux. Un café coûte **12 DH**, une commande contient **1 à 10 cafés**.
 
@@ -63,4 +63,4 @@ Cette condition reste un exercice : elle laisse aussi passer la livraison quand 
 
 Les vérifications réalisées et leurs limites figurent dans [VALIDATION.md](VALIDATION.md).
 test de declenchement auto jenkins
-sbnato
+oui bien sur
